@@ -57,7 +57,7 @@ body{
  HEAD
 
 /* Mobile Nav */
-@media (max-width: 920px) {
+@media (max-width: 920px){
   .menu-btn{display:block}
   .navbar{
     position:fixed; inset:64px 0 auto 0;
@@ -80,7 +80,7 @@ body{
 }
 HEAD
 
-/* ===== Home ===== */
+
 .home{
   min-height:88vh; display:grid; align-items:center; gap:4rem;
   grid-template-columns: 1.1fr 1.2fr;
@@ -95,7 +95,8 @@ HEAD
   overflow:hidden;
 }
 .avatar-wrap::before{
-  /* Blue glowing moon backdrop */
+ 
+
   content:""; position:absolute; inset:-15%;
   background:
     radial-gradient(closest-side, rgba(58,164,255,.25), transparent 70%),
@@ -142,4 +143,3 @@ HEAD
   border-color:rgba(58,164,255,.6); color:var(--accent); background:transparent;
 }
 .btn-ghost:hover{ background:rgba(58,164,255,.12); box-shadow: var(--ring) }
-
