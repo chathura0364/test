@@ -3,11 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Portfolio Website</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
 </head>
 <body>
+      <header class="header" id="top">
+        <a href="#home" class="logo">CHATHURA</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Open Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="navbar" id="navbar" aria-label="Primary">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+      </header>
+      <section class="home section" id="home">
+    <div class="home-left">
+      <div class="avatar-wrap">
+        <img src="Profile pic 2.jpeg" alt="Chathura portrait"/>
+      </div>
+    </div>
+    <div class="home-right">
+      <h1>Hi, I’m <span class="accent">Chathura</span></h1>
+      <h3 class="lead">I’m a <span class="typing-target"></span></h3>
+      <p class="intro">
+        I enjoy turning ideas into real projects with great design and strong functionality.
+      </p>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/chathura-yasisuru-68b8a4336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/chathura0364" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/_chathuwa_364?igsh=NGo1YXZweXl6dTc5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/94718705201" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#experience" class="btn btn-ghost">View Projects</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="services">
+    <h2 class="section-title">Services</h2>
+    <p class="section-subtitle">What I can do for you</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Responsive, accessible, and unique websites using modern stacks.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-palette"></i></div>
+        <h3>UI / UX Design</h3>
+        <p>User friendly interfaces with thoughtful interactions and usability.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Mobile Friendly</h3>
+        <p>Layouts that look great on every screen, from phones to desktops.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3>Performance</h3>
+        <p>Optimizations for speed, SEO, and Core Web Vitals.</p>
+      </article>
+    </div>
+  </section>
     
 </body>
 </html>
