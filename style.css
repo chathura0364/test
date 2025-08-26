@@ -18,3 +18,28 @@ body{
               radial-gradient(1200px 800px at 90% 110%, rgba(124,195,255,.08), transparent 60%),
               var(--bg);
 }
+
+/* Scrollbar */
+::-webkit-scrollbar{width:.8rem}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--accent)}
+
+/* ===== Header ===== */
+.header{
+  position:sticky; top:0; z-index:1000;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:1.4rem 7%;
+  backdrop-filter: blur(10px);
+  background: rgba(10,11,15,.55);
+  border-bottom:1px solid rgba(122,162,247,.08);
+}
+.logo{
+  font-weight:800; letter-spacing:.5px; font-size:1.8rem;
+  color:var(--accent);
+  text-decoration:none;
+}
+.menu-btn{
+  display:none; background:transparent; border:none; color:var(--text);
+  font-size:1.6rem; cursor:pointer;
+}
+
