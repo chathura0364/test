@@ -27,3 +27,32 @@ function setActiveLink(id){
   if (active) active.classList.add('active');
 }
 
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      setActiveLink(entry.target.id);
+    }
+  });
+}, { root: null, rootMargin: "-45% 0px -45% 0px", threshold: 0 });
+
+sections.forEach(sec => io.observe(sec));
+
+
+const words = [
+  "Web Developer",
+  "Software Developer",
+  "Frontend Developer",
+  "UI Designer",
+  "Problem Solver"
+];
+let w = 0, i = 0, del = false;
+
+function type() {
+  const word = words[w];
+  typingEl.textContent = word.slice(0, i);
+  if (!del && i < word.length) { i++; setTimeout(type, 90); }
+  else if (!del && i === word.length) { del = true; setTimeout(type, 1200); }
+  else if (del && i > 0) { i--; setTimeout(type, 45); }
+  else { del = false; w = (w + 1) % words.length; setTimeout(type, 300); }
+}
+document.addEventListener('DOMContentLoaded', () => type());
